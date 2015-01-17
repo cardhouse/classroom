@@ -1,6 +1,8 @@
 <?php
 
 use Classroom\Forms\SignInForm;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Laracasts\Flash\Flash;
 
 
@@ -28,26 +30,26 @@ class SessionsController extends \BaseController {
 	 * Log in a user
 	 * POST /login
 	 *
-	 * @return Response
+	 * @return Redirect
 	 */
 	public function store()
 	{
 		// Get the form input
-		$input = Input::only(['email', 'password']);
+		$formInput = Input::only(['email', 'password']);
 		
 		// Validate the input
-		$this->signInForm->validate($input);
+		$this->signInForm->validate($formInput);
 
 		// If valid, attempt to login
-		if(Auth::attempt($input))
+		if(Auth::attempt($formInput))
 		{
 		    Flash::message('Welcome Back');
 		    return Redirect::intended('account');
 		}
-		
+
 		// If not successful, send back with input
 		Flash::error('The email address or password is incorrect');
-		return Redirect::route('login_path')->withInput();
+		return Redirect::back()->withInput();
 	}
 
 	/**

@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'classroom',
 			'username'  => 'root',
-			'password'  => 'Iu2w@bbv',
+			'password'  => 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

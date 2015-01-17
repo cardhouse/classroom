@@ -58,3 +58,21 @@ Route::get('account', [
     'as' => 'account_path',
     'uses' => 'AccountsController@show'
 ]);
+
+/**
+ * Locations
+ */
+Route::get('locations', [
+    'as' => 'locations_path',
+    'uses' => 'LocationsController@index'
+]);
+
+Route::get('locations/add', [
+    'as' => 'add_location_path',
+    'uses' => 'LocationsController@create'
+]);
+
+Route::post('locations/add', [
+    'as' => 'add_locations_path',
+    'uses' => 'LocationsController@store'
+]);

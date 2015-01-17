@@ -1,6 +1,7 @@
 <?php
 namespace Codeception\Module;
 
+use Illuminate\Support\Facades\Hash;
 use Laracasts\TestDummy\Factory as TestDummy;
 
 
@@ -12,19 +13,38 @@ class FunctionalHelper extends \Codeception\Module
 
     public function haveAnAccount($overrides = [])
     {
-        $user = TestDummy::create('Classroom\Users\User', $overrides);
+        $this->have('Classroom\Users\User', $overrides);
     }
-    
+
+    public function addALocation($name, $address)
+    {
+        $I = $this->getModule('Laravel4');
+        $I->fillField('Name:', $name);
+        $I->fillField('Address:', $address);
+
+        $I->click('Add Location');
+        //return $this->have('Classroom\Locations\Location', $overrides);
+    }
+
+    public function have($model, $overrides = [])
+    {
+        TestDummy::create($model, $overrides);
+    }
+
     public function signIn()
     {
-        $this->haveAnAccount(['email' => 'foo@example.com', 'password' => 'foo']);
+        $email = 'foo@example.com';
+        $password = 'foo';
+
+        $this->haveAnAccount(compact('email', 'password'));
         
         $I = $this->getModule('Laravel4');
         
         $I->amOnPage('/login');
-        $I->fillField('email', 'foo@example.com');
-        $I->fillField('password', 'foo');
-        $I->click('Sign In');
+        $I->submitForm('form', [
+            'email' => $email,
+            'password' => $password
+        ]);
     }
     
     public function amLoggedIn()

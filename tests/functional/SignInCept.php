@@ -1,4 +1,6 @@
-<?php 
+<?php
+use Illuminate\Support\Facades\Auth;
+
 $I = new FunctionalTester($scenario);
 
 $I->am('NYSTS member');
@@ -8,4 +10,4 @@ $I->signIn();
 
 $I->amOnPage('/account');
 $I->see('Welcome Back');
-$I->assertFalse(Auth::check());
+$I->seeAuthentication();

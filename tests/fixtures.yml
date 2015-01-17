@@ -4,3 +4,9 @@ Classroom\Users\User:
   password: $string
   created_at: $date
   updated_at: $date
+
+Classroom\Locations\Location:
+  name: $string
+  address: $string
+  created_at: $date
+  updated_at: $date

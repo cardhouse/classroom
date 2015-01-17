@@ -26,7 +26,7 @@ class RegisterUserCommandHandler implements CommandHandler {
         $this->repository->save($user);
         $this->dispatchEventsFor($user);
         
-        Flash::overlay('User has been registered');
+        Flash::success('User has been registered');
         
         return $user;
     }

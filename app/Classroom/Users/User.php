@@ -1,17 +1,19 @@
 <?php namespace Classroom\Users;
 
+use Eloquent;
 use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;
+use Illuminate\Support\Facades\Hash;
 use Laracasts\Commander\Events\EventGenerator;
-use Eloquent, Hash;
+
 use Classroom\Registration\Events\UserRegistered;
 
-class User extends Eloquent implements UserInterface, RemindableInterface {
+class User extends \Eloquent implements UserInterface, RemindableInterface {
 
 	use UserTrait, RemindableTrait, EventGenerator;
-	
+
 	protected $fillable = ['name', 'email', 'password'];
 
 	/**
@@ -27,7 +29,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	protected $hidden = array('password', 'remember_token');
-	
+
 	/**
 	 * Hash the given password and set the user's attribute
 	 * 

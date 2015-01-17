@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://classroom.cardhouse.koding.io',
+	'url' => 'http://localhost:8888/classroom/public/',
 
 	/*
 	|--------------------------------------------------------------------------

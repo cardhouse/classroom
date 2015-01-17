@@ -10,4 +10,3 @@ modules:
     config:
         Laravel4:
             cleanup: true
-            environment: test
