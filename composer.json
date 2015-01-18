@@ -11,7 +11,8 @@
 		"laracasts/validation": "~1.0",
 		"laracasts/commander": "~1.0",
 		"laracasts/testdummy": "~1.0",
-		"laracasts/flash": "~1.0"
+		"laracasts/flash": "~1.0",
+		"eternicode/bootstrap-datepicker": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

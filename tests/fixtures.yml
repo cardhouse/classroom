@@ -6,7 +6,15 @@ Classroom\Users\User:
   updated_at: $date
 
 Classroom\Locations\Location:
+  id: $integer
   name: $string
   address: $string
+  created_at: $date
+  updated_at: $date
+
+Classroom\LocalClasses\LocalClass:
+  date: $date
+  location_id:
+    type: Classroom\Locations\Location
   created_at: $date
   updated_at: $date

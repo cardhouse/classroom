@@ -12,6 +12,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
               <li>{{ link_to_route('locations_path', 'Locations') }}</li>
+              <li>{{ link_to_route('local_classes_path', 'Local Classes') }}</li>
             @if( ! $currentUser)
               <li>{{ link_to_route('register_path','Register') }}</li>
             @endif
@@ -26,6 +27,8 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>{{ link_to_route('account_path', 'View Account') }}</li>
+                <li>{{ link_to_route('add_local_class_path', 'Add Class') }}</li>
+                <li>{{ link_to_route('add_location_path', 'Add Location') }}</li>
                 <li class="divider"></li>
                 <li>{{ link_to_route('logout_path', 'Log Out') }}</li>
               </ul>

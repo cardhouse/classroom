@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+    <h1>Add a location</h1>
     {{ Form::open(['route' => 'add_locations_path']) }}
 
     <!-- Name Input Form -->

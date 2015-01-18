@@ -16,4 +16,9 @@ class Location extends \Eloquent {
 
         return $location;
     }
+
+    public function localClasses()
+    {
+        return $this->hasMany('Classroom\LocalClasses\LocalClass');
+    }
 }

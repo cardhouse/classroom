@@ -8,7 +8,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://classroom.cardhouse.koding.io/css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
+        {{ HTML::style('/css/datepicker.css') }}
+        {{ HTML::script('/javascript/bootstrap-datepicker.js') }}
         <style>
             body {
                 margin-top: 70px;
@@ -30,6 +32,14 @@
         
         <script src="//code.jquery.com/jquery.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        {{ HTML::script('/javascript/bootstrap-datepicker.js') }}
         <script>$('#flash-overlay-modal').modal();</script>
+        <script>
+            $('.input-append.date').datepicker({
+                format: "MM dd, yyyy",
+                autoclose: true,
+                todayHighlight: true
+            });
+        </script>
     </body>
 </html>

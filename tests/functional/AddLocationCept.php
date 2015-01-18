@@ -9,6 +9,6 @@ $I->amOnPage('locations/add');
 $I->seeAuthentication();
 $I->addALocation('Fake Address', '1234 Fake Street');
 
-$I->canSeeCurrentUrlEquals('/locations');
+$I->amOnRoute('locations_path');
 $I->see('1234 Fake Street');
 

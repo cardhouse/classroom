@@ -76,3 +76,21 @@ Route::post('locations/add', [
     'as' => 'add_locations_path',
     'uses' => 'LocationsController@store'
 ]);
+
+/**
+ * Local Classes
+ */
+Route::get('classes', [
+    'as' => 'local_classes_path',
+    'uses' => 'LocalClassesController@index'
+]);
+
+Route::get('classes/add', [
+    'as' => 'add_local_class_path',
+    'uses' => 'LocalClassesController@create'
+]);
+
+Route::post('classes/add', [
+    'as' => 'add_local_class_path',
+    'uses' => 'LocalClassesController@store'
+]);
