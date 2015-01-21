@@ -18,18 +18,22 @@ class FunctionalHelper extends \Codeception\Module
     public function addALocation($name, $address)
     {
         $overrides = ['address' => $address];
-        return $this->have('Classroom\Locations\Location', $overrides);
 
+        $I = $this->getModule('Laravel4');
+        $I->submitForm('form', [
+            'name' => $name,
+            'address' => $address,
+        ]);
     }
 
     public function addALocalClass($date){
-        $this->have('Classroom\LocalClasses\LocalClass', ['date' => $date]);
         $I = $this->getModule('Laravel4');
 
         $I->amOnPage('classes/add');
-        $I->fillField('date', $date);
-        $I->selectOption('location_id', '148');
-        $I->click('Add Class');
+        $I->submitForm('form', [
+            'date' => $date,
+            'location_id' => 420
+        ]);
     }
 
     public function have($model, $overrides = [])
@@ -39,13 +43,12 @@ class FunctionalHelper extends \Codeception\Module
 
     public function signIn()
     {
+        $I = $this->getModule('Laravel4');
         $email = 'foo@example.com';
         $password = 'foo';
 
         $this->haveAnAccount(compact('email', 'password'));
-        
-        $I = $this->getModule('Laravel4');
-        
+
         $I->amOnPage('/login');
         $I->submitForm('form', [
             'email' => $email,

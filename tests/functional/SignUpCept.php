@@ -1,7 +1,7 @@
 <?php 
 $I = new FunctionalTester($scenario);
 $I->am('guest');
-$I->wantTo('Sign up for a class');
+$I->wantTo('register for an account');
 
 $I->amOnPage('/');
 $I->click("Register Now");

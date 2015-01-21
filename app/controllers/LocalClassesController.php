@@ -22,6 +22,7 @@ class LocalClassesController extends \BaseController {
 
 	function __construct(LocationsRepository $locationsRepository, AddClassForm $addClassForm,CommandBus $commandBus,LocalClassesRepository $localClassesRepository)
 	{
+		$this->beforeFilter('auth', ['except' => 'index']);
 		$this->commandBus = $commandBus;
 		$this->addClassForm = $addClassForm;
 		$this->localClassesRepository = $localClassesRepository;
@@ -63,6 +64,8 @@ class LocalClassesController extends \BaseController {
 	{
 		$this->addClassForm->validate(Input::all());
 		extract(Input::all());
+		// Change string date field into a dateTime
+		$date = date('Y-m-d', strtotime($date));
 		$this->commandBus->execute(new AddClassCommand($date, $location_id));
 
 		return Redirect::route('local_classes_path');
@@ -80,40 +83,6 @@ class LocalClassesController extends \BaseController {
 		//
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /localclasses/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
 
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /localclasses/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /localclasses/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
 
 }

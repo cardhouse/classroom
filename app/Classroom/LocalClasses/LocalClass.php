@@ -19,6 +19,7 @@ class LocalClass extends \Eloquent {
         return $localClass;
     }
 
+
     public function location()
     {
         return $this->belongsTo('Classroom\Locations\Location');

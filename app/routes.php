@@ -11,6 +11,13 @@
 |
 */
 
+/**
+ * Design sandbox to try different things
+ */
+Route::get('sandbox', function(){
+    return View::make('pages.sandbox');
+});
+
 Event::listen('Classroom.Registration.Events.UserRegistered', function($event){
     
 });

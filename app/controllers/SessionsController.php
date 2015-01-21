@@ -34,14 +34,10 @@ class SessionsController extends \BaseController {
 	 */
 	public function store()
 	{
-		// Get the form input
-		$formInput = Input::only(['email', 'password']);
-		
-		// Validate the input
-		$this->signInForm->validate($formInput);
+		$formData = Input::only(['email', 'password']);
+		$this->signInForm->validate($formData);
 
-		// If valid, attempt to login
-		if(Auth::attempt($formInput))
+		if(Auth::attempt($formData))
 		{
 		    Flash::message('Welcome Back');
 		    return Redirect::intended('account');
