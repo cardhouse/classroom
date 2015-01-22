@@ -13,9 +13,6 @@ $I->fillField("Password:","bar");
 $I->fillField("Confirm Password:","bar");
 $I->click("Sign Up");
 
-$I->seeCurrentUrlEquals('');
-$I->see("Welcome to NYSTS");
-
 $I->seeRecord('users',[
     'name' => "bar",
     'email' => 'bar@example.com'

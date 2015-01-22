@@ -52,7 +52,7 @@ class LocationsController extends \BaseController {
 	public function store()
 	{
 		$this->commandBus->execute(new AddLocationCommand(Input::all()));
-		return Redirect::route('locations_path');
+		return Redirect::back();
 	}
 
 

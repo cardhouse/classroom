@@ -11,7 +11,7 @@ class LocalClass extends \Eloquent {
 
     protected $table = 'local_classes';
 
-    public static function add($date, $location)
+    public static function add($date, $location_id)
     {
         $localClass = new static(compact('date', 'location_id'));
         $localClass->raise(new LocalClassWasAdded($localClass));
@@ -23,6 +23,11 @@ class LocalClass extends \Eloquent {
     public function location()
     {
         return $this->belongsTo('Classroom\Locations\Location');
+    }
+
+    public function enrollments()
+    {
+        return $this->hasMany('Classroom\Enrollment\Enrollment');
     }
     
 }

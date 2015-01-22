@@ -10,15 +10,46 @@ use Laracasts\TestDummy\Factory as TestDummy;
 class FunctionalHelper extends \Codeception\Module
 {
 
+    /**
+     * Universal dummy maker to set an item
+     *
+     * @param $model
+     * @param array $overrides - optional
+     * @return mixed
+     */
+    public function have($model, $overrides = [])
+    {
+        return TestDummy::create($model, $overrides);
+    }
+
+    /**
+     * Helper class to return an account
+     *
+     * @param array $overrides
+     * @return mixed
+     */
     public function haveAnAccount($overrides = [])
     {
         return $this->have('Classroom\Users\User', $overrides);
     }
 
+    public function enrollInAClass($num_students)
+    {
+        $I = $this->getModule('Laravel4');
+        $I->submitForm('form', [
+            'num_students' => $num_students
+        ]);
+    }
+
+    /**
+     * Add a location
+     *
+     * @param $name
+     * @param $address
+     * @throws \Codeception\Exception\Module
+     */
     public function addALocation($name, $address)
     {
-        $overrides = ['address' => $address];
-
         $I = $this->getModule('Laravel4');
         $I->submitForm('form', [
             'name' => $name,
@@ -26,6 +57,12 @@ class FunctionalHelper extends \Codeception\Module
         ]);
     }
 
+    /**
+     * Add an instance of a local class
+     *
+     * @param $date
+     * @throws \Codeception\Exception\Module
+     */
     public function addALocalClass($date){
         $I = $this->getModule('Laravel4');
 
@@ -36,11 +73,11 @@ class FunctionalHelper extends \Codeception\Module
         ]);
     }
 
-    public function have($model, $overrides = [])
-    {
-        return TestDummy::create($model, $overrides);
-    }
-
+    /**
+     * Sign in with a user
+     *
+     * @throws \Codeception\Exception\Module
+     */
     public function signIn()
     {
         $I = $this->getModule('Laravel4');
@@ -55,7 +92,10 @@ class FunctionalHelper extends \Codeception\Module
             'password' => $password
         ]);
     }
-    
+
+    /**
+     * Easy way to sign in a user
+     */
     public function amLoggedIn()
     {
         $this->signIn();

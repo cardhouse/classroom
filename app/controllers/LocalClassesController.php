@@ -22,7 +22,7 @@ class LocalClassesController extends \BaseController {
 
 	function __construct(LocationsRepository $locationsRepository, AddClassForm $addClassForm,CommandBus $commandBus,LocalClassesRepository $localClassesRepository)
 	{
-		$this->beforeFilter('auth', ['except' => 'index']);
+		$this->beforeFilter('auth', ['except' => ['index', 'show']]);
 		$this->commandBus = $commandBus;
 		$this->addClassForm = $addClassForm;
 		$this->localClassesRepository = $localClassesRepository;
@@ -78,9 +78,10 @@ class LocalClassesController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($date)
 	{
-		//
+		$localClass = $this->localClassesRepository->findByDate($date);
+		return View::make('localClasses.show', compact('localClass'));
 	}
 
 

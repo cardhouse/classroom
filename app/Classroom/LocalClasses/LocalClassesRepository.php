@@ -20,4 +20,14 @@ class LocalClassesRepository {
         return LocalClass::all();
     }
 
+    public function findByDate($date)
+    {
+        return LocalClass::where('date', '=', $date)->firstOrFail();
+    }
+
+    public function findById($id)
+    {
+        return LocalClass::findOrFail($id);
+    }
+
 }

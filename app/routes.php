@@ -97,7 +97,25 @@ Route::get('classes/add', [
     'uses' => 'LocalClassesController@create'
 ]);
 
+Route::get('classes/{date}', [
+    'as' => 'show_class',
+    'uses' => 'LocalClassesController@show'
+]);
+
 Route::post('classes/add', [
     'as' => 'add_local_class_path',
     'uses' => 'LocalClassesController@store'
+]);
+
+/**
+ * Enrollment
+ */
+Route::get('classes/{date}/enroll',[
+    'as' => 'enroll_path',
+    'uses' => 'EnrollmentController@create'
+]);
+
+Route::post('classes/{date}/enroll', [
+    'as' => 'enroll_path',
+    'uses' => 'EnrollmentController@store'
 ]);

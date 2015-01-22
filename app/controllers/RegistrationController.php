@@ -38,7 +38,7 @@ class RegistrationController extends \BaseController {
         
         Auth::login($user);
         
-        return Redirect::home();
+        return Redirect::intended('/classes');
     }
 
 }

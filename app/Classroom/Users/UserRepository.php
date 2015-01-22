@@ -5,4 +5,9 @@ class UserRepository {
     {
         return $user->save();
     }
+
+    public function findById($id)
+    {
+        return User::findOrFail($id);
+    }
 }
