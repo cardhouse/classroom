@@ -11,6 +11,7 @@ class EnrollmentRepository {
      * @var UserRepository
      */
     private $userRepository;
+
     /**
      * @var LocalClassesRepository
      */
@@ -22,9 +23,27 @@ class EnrollmentRepository {
         $this->localClassesRepository = $localClassesRepository;
     }
 
-    public function save(Enrollment $enrollment, $user_id, $localClass_id)
+    /**
+     * Save the enrollment to a user
+     *
+     * @param Enrollment $enrollment
+     * @param $user_id
+     * @return mixed
+     */
+    public function saveToUser(Enrollment $enrollment, $user_id)
     {
-        $this->userRepository->findById($user_id)->enrollments()->save($enrollment);
+        return $this->userRepository->findById($user_id)->enrollments()->save($enrollment);
+    }
+
+    /**
+     * Save the enrollment to a class
+     *
+     * @param Enrollment $enrollment
+     * @param $localClass_id
+     * @return mixed
+     */
+    public function saveToClass(Enrollment $enrollment, $localClass_id)
+    {
         return $this->localClassesRepository->findById($localClass_id)->enrollments()->save($enrollment);
     }
 }

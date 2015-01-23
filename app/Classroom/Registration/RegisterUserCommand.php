@@ -1,5 +1,12 @@
 <?php namespace Classroom\Registration;
 
+/**
+ * Create an instance of a user
+ * The Handler will take it from here
+ *
+ * Class RegisterUserCommand
+ * @package Classroom\Registration
+ */
 class RegisterUserCommand {
     
     public $name;

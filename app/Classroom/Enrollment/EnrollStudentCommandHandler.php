@@ -17,7 +17,9 @@ class EnrollStudentCommandHandler implements CommandHandler {
 
 
     /**
-     * Handle the command.
+     * Create an instance of an enrollment
+     * save the instance to a user and a local class
+     * dispatch events, and return the enrollment
      *
      * @param object $command
      * @return object $enrollment
@@ -26,12 +28,12 @@ class EnrollStudentCommandHandler implements CommandHandler {
     {
         $enrollment = Enrollment::enroll($command->user_id, $command->localClass_id, $command->num_students);
 
-        $this->repository->save($enrollment, $command->user_id, $command->localClass_id, $command->num_students);
+        $this->repository->saveToUser($enrollment, $command->user_id);
+        $this->repository->saveToClass($enrollment, $command->localClass_id);
 
         $this->dispatchEventsFor($enrollment);
 
         Flash::success('You have enrolled');
-
         return $enrollment;
     }
 

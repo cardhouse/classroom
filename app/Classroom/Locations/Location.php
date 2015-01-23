@@ -9,6 +9,14 @@ class Location extends \Eloquent {
 
     protected $fillable = ['address', 'name'];
 
+    /**
+     * Create a static instance of a location
+     * raise an event, and return the location
+     *
+     * @param $name
+     * @param $address
+     * @return static
+     */
     public static function add($name, $address)
     {
         $location = new static(compact('name', 'address'));
@@ -17,6 +25,12 @@ class Location extends \Eloquent {
         return $location;
     }
 
+    /**
+     * Local classes relationship
+     * "This location has many local classes"
+     *
+     * @return mixed
+     */
     public function localClasses()
     {
         return $this->hasMany('Classroom\LocalClasses\LocalClass');

@@ -16,6 +16,14 @@ class AddClassCommandHandler implements CommandHandler {
         $this->repository = $repository;
     }
 
+    /**
+     * Create an instance of a local class
+     * save the local class to the database
+     * dispatch events, and return the local class
+     *
+     * @param $command
+     * @return static
+     */
     public function handle($command)
     {
         $localClass = LocalClass::add($command->date, $command->location_id);
@@ -25,7 +33,6 @@ class AddClassCommandHandler implements CommandHandler {
         $this->dispatchEventsFor($localClass);
 
         Flash::message('Class has been added');
-
         return $localClass;
     }
 }

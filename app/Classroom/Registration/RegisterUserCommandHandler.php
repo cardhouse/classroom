@@ -9,14 +9,27 @@ use Laracasts\Flash\Flash;
 class RegisterUserCommandHandler implements CommandHandler {
     
     use DispatchableTrait;
-    
+
+    /**
+     * Repository to interact with the database
+     *
+     * @var UserRepository
+     */
     protected $repository;
     
     function __construct(UserRepository $repository)
     {
         $this->repository = $repository;
     }
-    
+
+    /**
+     * Create an instance of the user
+     * save the instance with the repository
+     * dispatch events, and return the user
+     *
+     * @param $command
+     * @return User
+     */
     public function handle($command)
     {
         $user = User::register(

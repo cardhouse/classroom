@@ -42,7 +42,8 @@ class User extends \Eloquent implements UserInterface, RemindableInterface {
 	
 	
     /**
-     * Register a user
+     * Create a static user object
+     * and raise an event
      * 
      * @param name
      * @param email 
@@ -53,12 +54,17 @@ class User extends \Eloquent implements UserInterface, RemindableInterface {
     public static function register($name, $email, $password)
     {
         $user = new static(compact('name', 'email', 'password'));
-        
         $user->raise(new UserRegistered($user));
         
         return $user;
     }
 
+    /**
+     * Enrollments relationship
+     * "This user has many enrollments"
+     *
+     * @return mixed
+     */
     public function enrollments()
     {
         return $this->hasMany('Classroom\Enrollment\Enrollment');
