@@ -1,10 +1,18 @@
 <?php
 
+use Classroom\Enrollment\EnrollmentRepository;
+
 class AccountsController extends \BaseController {
 
-	function __construct()
+	/**
+	 * @var EnrollmentRepository
+	 */
+	private $enrollmentRepository;
+
+	function __construct(EnrollmentRepository $enrollmentRepository)
 	{
 		$this->beforeFilter('auth');
+		$this->enrollmentRepository = $enrollmentRepository;
 	}
 
 
@@ -16,7 +24,9 @@ class AccountsController extends \BaseController {
 	 */
 	public function show()
 	{
-		return View::make('accounts.show');
+		$enrollments = $this->enrollmentRepository->getAllForUser(Auth::user());
+
+		return View::make('accounts.show', compact('enrollments'));
 	}
 
 

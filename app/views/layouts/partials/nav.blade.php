@@ -25,6 +25,7 @@
             <li>{{ link_to_route('account_path', 'View Account') }}</li>
             <li>{{ link_to_route('add_local_class_path', 'Add Class') }}</li>
             <li>{{ link_to_route('add_location_path', 'Add Location') }}</li>
+            <li>{{ link_to_route('add_promo_path', 'New Promo Code') }}</li>
             <li class="divider"></li>
             <li>{{ link_to_route('logout_path', 'Log Out') }}</li>
           </ul>

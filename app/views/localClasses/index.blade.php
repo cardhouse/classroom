@@ -8,6 +8,10 @@
                 <a href="{{ route('show_class', $class->date) }}">
                     {{ date("F d, Y", strtotime($class->date)) }} at {{ $class->location->address }}
                 </a>
+
+                <a href="{{ route('class_info_path', ['date' => $class->date]) }}">
+                    <span class="badge">{{ $class->totalStudents() }}</span>
+                </a>
             </li>
         @endforeach
     </ul>

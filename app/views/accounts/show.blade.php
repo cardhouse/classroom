@@ -15,7 +15,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($currentUser->enrollments as $enrollment)
+                @foreach($enrollments as $enrollment)
                     <tr>
                         <td>{{ $enrollment->localClass->date }}</td>
                         <td>

@@ -97,14 +97,19 @@ Route::get('classes/add', [
     'uses' => 'LocalClassesController@create'
 ]);
 
+Route::post('classes/add', [
+    'as' => 'add_local_class_path',
+    'uses' => 'LocalClassesController@store'
+]);
+
 Route::get('classes/{date}', [
     'as' => 'show_class',
     'uses' => 'LocalClassesController@show'
 ]);
 
-Route::post('classes/add', [
-    'as' => 'add_local_class_path',
-    'uses' => 'LocalClassesController@store'
+Route::get('classes/{date}/students', [
+    'as' => 'class_info_path',
+    'uses' => 'LocalClassesController@info'
 ]);
 
 /**
@@ -118,4 +123,23 @@ Route::get('classes/{date}/enroll',[
 Route::post('classes/{date}/enroll', [
     'as' => 'enroll_path',
     'uses' => 'EnrollmentController@store'
+]);
+
+/**
+ * Promotions
+ */
+
+Route::get('promo', [
+    'as' => 'promo_path',
+    'uses' => 'PromotionsController@index'
+]);
+
+Route::get('promo/add', [
+    'as' => 'add_promo_path',
+    'uses' => 'PromotionsController@create'
+]);
+
+Route::post('promo/add', [
+        'as' => 'add_promo_path',
+        'uses' => 'PromotionsController@store'
 ]);

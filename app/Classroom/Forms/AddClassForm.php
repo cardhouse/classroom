@@ -7,6 +7,6 @@ class AddClassForm extends FormValidator {
 
     protected $rules = [
         'date' => 'required|date_format:"F d, Y"|unique:local_classes',
-        'location_id' => 'required|integer',
+        'location_id' => 'required|integer'
     ];
 }

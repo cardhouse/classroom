@@ -7,6 +7,8 @@ class LocalClass extends \Eloquent {
 
     use EventGenerator;
 
+
+
     /**
      * The date of the class
      *
@@ -20,6 +22,10 @@ class LocalClass extends \Eloquent {
      * @var string
      */
     protected $table = 'local_classes';
+    /**
+     * @var
+     */
+    private $repo;
 
     /**
      * Create a static class object and raise an event
@@ -36,6 +42,11 @@ class LocalClass extends \Eloquent {
         return $localClass;
     }
 
+    public function totalStudents()
+    {
+        $repo = new LocalClassesRepository;
+        return $repo->totalStudents($this);
+    }
 
     /**
      * Location relationship

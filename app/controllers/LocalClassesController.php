@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Classroom\Forms\AddClassForm;
 use Classroom\LocalClasses\AddClassCommand;
 use Classroom\LocalClasses\LocalClassesRepository;
@@ -80,8 +81,19 @@ class LocalClassesController extends \BaseController {
 	 */
 	public function show($date)
 	{
+		$date = new Carbon($date, 'America/New_York');
+
 		$localClass = $this->localClassesRepository->findByDate($date);
-		return View::make('localClasses.show', compact('localClass'));
+		return View::make('localClasses.show', compact('localClass', 'date'));
+	}
+
+	public function info($date)
+	{
+		$localClass = $this->localClassesRepository->findByDate($date);
+		$total_students = $this->localClassesRepository->totalStudents($localClass);
+		$registrations = $localClass->enrollments;
+
+		return View::make('localClasses.info', compact('localClass', 'registrations', 'total_students'));
 	}
 
 

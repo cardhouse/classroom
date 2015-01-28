@@ -9,21 +9,12 @@
                     Reduction Course!</h1>
                 <p>The only humorous PIR class allowed by the New York State Department of Motor Vehicles</p>
 
-                {{--@if( $currentUser )--}}
-                    {{ link_to_route(
-                        'enroll_path', // Path Name
-                        'Enroll Now', // Display Text
-                        ['date' => $localClass->date], // Parameters
-                        ['class' => 'btn btn-lg btn-primary']
-                    )}}
-                {{--@else--}}
-                    {{--{{ link_to_route(--}}
-                        {{--'enroll_path', // Path Name--}}
-                        {{--'Sign In', // Display Text--}}
-                        {{--['date' => $localClass->date], // Parameters--}}
-                        {{--['class' => 'btn btn-lg btn-primary']--}}
-                    {{--)}} or <a type="button" data-toggle="modal" data-target="#registration_form">Register for an account</a>--}}
-                {{--@endif--}}
+                {{ link_to_route(
+                    'enroll_path', // Path Name
+                    'Enroll Now', // Display Text
+                    ['date' => $date->toDateString()], // Parameters
+                    ['class' => 'btn btn-lg btn-primary']
+                )}}
             </div>
         </div>
 
@@ -32,7 +23,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2>Class Date</h2>
-                    <p>{{ $localClass->date }}</p>
+                    <p>{{ $date->toFormattedDateString() }}</p>
+                    <p>{{ $date->diffForHumans() }}</p>
                 </div>
                 <div class="col-md-4">
                     <h2>Location</h2>
@@ -40,7 +32,7 @@
                 </div>
                 <div class="col-md-4">
                     <h2>Cost</h2>
-                    <p>Registration costs $30</p>
+                    <p>Registration costs ${{ $localClass->price }}</p>
                 </div>
             </div>
         </div> <!-- /container -->

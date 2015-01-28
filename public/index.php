@@ -20,6 +20,8 @@
 
 require __DIR__.'/../bootstrap/autoload.php';
 
+require __DIR__.'/../c3.php';
+
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights

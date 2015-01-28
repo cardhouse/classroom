@@ -24,7 +24,7 @@ class LocalClassesRepository {
      */
     public function getAll()
     {
-        return LocalClass::all();
+        return LocalClass::with('Location')->orderBy('date', 'asc')->get();
     }
 
     /**
@@ -38,6 +38,18 @@ class LocalClassesRepository {
     public function findByDate($date)
     {
         return LocalClass::where('date', '=', $date)->firstOrFail();
+    }
+
+    public function totalStudents(LocalClass $class)
+    {
+        $enrollments = $class->enrollments;
+        $count = 0;
+
+        foreach($enrollments as $enrollment){
+            $count += $enrollment->num_students;
+        }
+
+        return $count;
     }
 
     /**

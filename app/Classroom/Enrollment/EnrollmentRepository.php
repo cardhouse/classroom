@@ -2,6 +2,7 @@
 
 
 use Classroom\LocalClasses\LocalClassesRepository;
+use Classroom\Users\User;
 use Classroom\Users\UserRepository;
 
 class EnrollmentRepository {
@@ -21,6 +22,11 @@ class EnrollmentRepository {
     {
         $this->userRepository = $userRepository;
         $this->localClassesRepository = $localClassesRepository;
+    }
+
+    public function getAllForUser(User $user)
+    {
+        return $user->enrollments()->latest()->get();
     }
 
     /**

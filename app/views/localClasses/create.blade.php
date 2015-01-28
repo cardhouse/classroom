@@ -26,6 +26,12 @@
                 {{ Form::select('location_id', $locations, null, ['class' => 'form-control']) }}
             </div>
 
+            <!-- Price Input Form -->
+            <div class="form-group">
+                {{ Form::label('price', 'Price:') }}
+                {{ Form::number('price', 30, ['class' => 'form-control']) }}
+            </div>
+
             <br />
 
             <!-- Form Submit Button -->

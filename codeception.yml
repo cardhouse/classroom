@@ -4,6 +4,13 @@ paths:
     log: tests/_output
     data: tests/_data
     helpers: tests/_support
+coverage:
+    enabled: true
+    remote: true
+    include:
+        - app/*
+    exclude:
+        - app/cache/*
 settings:
     bootstrap: _bootstrap.php
     colors: true
@@ -12,6 +19,6 @@ modules:
     config:
         Db:
             dsn: ''
-            user: ''
-            password: ''
+            user: 'root'
+            password: 'root'
             dump: tests/_data/dump.sql
