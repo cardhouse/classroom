@@ -1,5 +1,7 @@
 <?php
 
+use Classroom\Promotions\Promo;
+
 class BaseController extends Controller {
 
 	/**
@@ -13,7 +15,13 @@ class BaseController extends Controller {
 		{
 			$this->layout = View::make($this->layout);
 		}
-		
+
+		$promos = Promo::orderBy('promo_code')->get();
+
+		/**
+		 * Share variables across all layouts
+		 */
+		View::share('promo_codes', $promos);
 		View::share('currentUser', Auth::user());
 		
 	}

@@ -35,9 +35,11 @@ class FunctionalHelper extends \Codeception\Module
 
     public function enrollInAClass($num_students)
     {
+        $promo = $this->have('Classroom\Promotions\Promo');
         $I = $this->getModule('Laravel4');
         $I->submitForm('form', [
-            'num_students' => $num_students
+            'num_students' => $num_students,
+            'promo_code' => $promo->id
         ]);
     }
 

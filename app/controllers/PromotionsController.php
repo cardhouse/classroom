@@ -22,20 +22,18 @@ class PromotionsController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /promotions
+	 * GET /promo
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		$promos = Promo::all();
-
-		return View::make('promotions.index', compact('promos'));
+		return View::make('promotions.index');
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /promotions/create
+	 * GET /promo/add
 	 *
 	 * @return Response
 	 */
@@ -46,7 +44,7 @@ class PromotionsController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /promotions
+	 * POST /promo/add
 	 *
 	 * @return Response
 	 */
@@ -60,18 +58,6 @@ class PromotionsController extends \BaseController {
 
 		return Redirect::route('promo_path');
 
-	}
-
-	/**
-	 * Display the specified resource.
-	 * GET /promotions/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
 	}
 
 	/**

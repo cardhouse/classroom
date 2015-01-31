@@ -18,5 +18,9 @@ class Promo extends \Eloquent {
 
         return $promo;
     }
-    
+
+    public function enrollments()
+    {
+        return $this->belongsToMany('Classroom\Enrollment\Enrollment');
+    }
 }

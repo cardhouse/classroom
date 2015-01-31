@@ -1,5 +1,7 @@
 <?php namespace Classroom\Enrollment;
 
+use Classroom\LocalClasses\LocalClass;
+use Classroom\Promotions\Promo;
 use Laracasts\Commander\CommandHandler;
 use Laracasts\Commander\Events\DispatchableTrait;
 use Laracasts\Flash\Flash;
@@ -26,10 +28,13 @@ class EnrollStudentCommandHandler implements CommandHandler {
      */
     public function handle($command)
     {
-        $enrollment = Enrollment::enroll($command->user_id, $command->localClass_id, $command->num_students);
-
+        $enrollment = Enrollment::enroll($command->user_id, $command->num_students);
+        $enrollment->total = $command->total;
+        $promo = Promo::find($command->promo_code);
         $this->repository->saveToUser($enrollment, $command->user_id);
         $this->repository->saveToClass($enrollment, $command->localClass_id);
+        $this->repository->attachPromo($enrollment, $promo);
+        $this->repository->save($enrollment);
 
         $this->dispatchEventsFor($enrollment);
 

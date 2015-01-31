@@ -14,6 +14,12 @@
                 {{ Form::number('num_students', 1, ['class' => 'form-control']) }}
             </div>
 
+            <!-- Promo dropdown -->
+            <div class="form-group">
+                {{ Form::label('promo_code', 'Promo code:') }}
+                {{ Form::select('promo_code', $promo_codes->lists('promo_code', 'id'), null, ['class' => 'form-control']) }}
+            </div>
+
             <!-- Form Submit Button -->
             <div class="form-group">
                 {{ Form::submit('Enroll', ['class' => 'btn btn-primary']) }}

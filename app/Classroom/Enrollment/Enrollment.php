@@ -22,11 +22,10 @@ class Enrollment extends \Eloquent {
      * @param $num_students
      * @return static
      */
-    public static function enroll($user_id, $local_class_id, $num_students)
+    public static function enroll($user_id, $num_students)
     {
-        $enrollment = new static(compact('user_id', 'local_class_id', 'num_students'));
+        $enrollment = new static(compact('user_id', 'num_students'));
         $enrollment->raise(new StudentEnrolled($enrollment));
-
         return $enrollment;
     }
 
@@ -50,6 +49,11 @@ class Enrollment extends \Eloquent {
     public function localClass()
     {
         return $this->belongsTo('Classroom\LocalClasses\LocalClass');
+    }
+
+    public function promo()
+    {
+        return $this->hasOne('Classroom\Promotions\Promo', 'enrollment_id');
     }
     
 }

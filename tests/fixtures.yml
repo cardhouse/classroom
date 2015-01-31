@@ -18,3 +18,11 @@ Classroom\LocalClasses\LocalClass:
     type: Classroom\Locations\Location
   created_at: $date
   updated_at: $date
+
+Classroom\Promotions\Promo:
+  id: $integer
+  name: $string
+  promo_code: $string
+  discount: $integer
+  created_at: $date
+  updated_at: $date

@@ -3,8 +3,8 @@
 use Classroom\Enrollment\EnrollmentRepository;
 use Classroom\Enrollment\EnrollStudentCommand;
 use Classroom\Forms\EnrollmentForm;
-use Classroom\LocalClasses\LocalClass;
 use Classroom\LocalClasses\LocalClassesRepository;
+use Classroom\Promotions\PromotionsRepository;
 use Laracasts\Commander\CommandBus;
 use Laracasts\Flash\Flash;
 
@@ -26,14 +26,19 @@ class EnrollmentController extends \BaseController {
 	 * @var LocalClassesRepository
 	 */
 	private $localClassesRepository;
+	/**
+	 * @var PromotionsRepository
+	 */
+	private $promoRepo;
 
-	function __construct(LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm, EnrollmentRepository $enrollmentRepository, CommandBus $commandBus)
+	function __construct(PromotionsRepository $promoRepo, LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm, EnrollmentRepository $enrollmentRepository, CommandBus $commandBus)
 	{
 		$this->beforeFilter('auth');
 		$this->enrollmentForm = $enrollmentForm;
 		$this->enrollmentRepository = $enrollmentRepository;
 		$this->commandBus = $commandBus;
 		$this->localClassesRepository = $localClassesRepository;
+		$this->promoRepo = $promoRepo;
 	}
 
 
@@ -65,7 +70,10 @@ class EnrollmentController extends \BaseController {
 		$this->enrollmentForm->validate($input);
 		extract($input);
 
-		$this->commandBus->execute(new EnrollStudentCommand($user_id, $localClass_id, $num_students));
+		$promo = $this->promoRepo->findById($promo_code);
+
+		$total = ($localClass->price - $promo->discount) * $num_students;
+		$this->commandBus->execute(new EnrollStudentCommand($user_id, $localClass_id, $num_students, $promo_code, $total));
 
 		Flash::success('You have enrolled');
 
