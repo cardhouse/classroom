@@ -69,5 +69,10 @@ class LocalClass extends \Eloquent {
     {
         return $this->hasMany('Classroom\Enrollment\Enrollment');
     }
+
+    public function getDates()
+    {
+        return['date'];
+    }
     
 }

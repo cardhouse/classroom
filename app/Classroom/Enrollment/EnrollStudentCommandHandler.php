@@ -30,10 +30,8 @@ class EnrollStudentCommandHandler implements CommandHandler {
     {
         $enrollment = Enrollment::enroll($command->user_id, $command->num_students);
         $enrollment->total = $command->total;
-        $promo = Promo::find($command->promo_code);
         $this->repository->saveToUser($enrollment, $command->user_id);
         $this->repository->saveToClass($enrollment, $command->localClass_id);
-        $this->repository->attachPromo($enrollment, $promo);
         $this->repository->save($enrollment);
 
         $this->dispatchEventsFor($enrollment);

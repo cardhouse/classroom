@@ -21,6 +21,6 @@ class Promo extends \Eloquent {
 
     public function enrollments()
     {
-        return $this->belongsToMany('Classroom\Enrollment\Enrollment');
+        return $this->hasMany('Classroom\Enrollment\Enrollment', 'promo_code_id');
     }
 }

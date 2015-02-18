@@ -53,7 +53,7 @@ class Enrollment extends \Eloquent {
 
     public function promo()
     {
-        return $this->hasOne('Classroom\Promotions\Promo', 'enrollment_id');
+        return $this->hasOne('Classroom\Promotions\Promo');
     }
     
 }

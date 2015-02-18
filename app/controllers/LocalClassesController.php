@@ -81,10 +81,9 @@ class LocalClassesController extends \BaseController {
 	 */
 	public function show($date)
 	{
-		$date = new Carbon($date, 'America/New_York');
-
 		$localClass = $this->localClassesRepository->findByDate($date);
-		return View::make('localClasses.show', compact('localClass', 'date'));
+
+		return View::make('localClasses.show', compact('localClass'));
 	}
 
 	public function info($date)

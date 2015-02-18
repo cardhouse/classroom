@@ -73,7 +73,9 @@ class EnrollmentController extends \BaseController {
 		$promo = $this->promoRepo->findById($promo_code);
 
 		$total = ($localClass->price - $promo->discount) * $num_students;
-		$this->commandBus->execute(new EnrollStudentCommand($user_id, $localClass_id, $num_students, $promo_code, $total));
+		$enrollment = $this->commandBus->execute(new EnrollStudentCommand($user_id, $localClass_id, $num_students,
+            $total));
+        $promo->enrollments()->save($enrollment);
 
 		Flash::success('You have enrolled');
 

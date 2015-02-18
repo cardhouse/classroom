@@ -18,7 +18,7 @@
                 <tbody>
                 @foreach($enrollments as $enrollment)
                     <tr>
-                        <td>{{ $enrollment->localClass->date }}</td>
+                        <td>{{ $enrollment->localClass->date->toFormattedDateString() }}</td>
                         <td>
                             <p>{{ $enrollment->localClass->location->name }}</p>
                             <p>{{ $enrollment->localClass->location->address }}</p>

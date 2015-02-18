@@ -2,40 +2,51 @@
 
 @section('content')
     <div class="row">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Point and Insurance<br />
-                    Reduction Course!</h1>
-                <p>The only humorous PIR class allowed by the New York State Department of Motor Vehicles</p>
+        <div class="col-md-8 col-md-push-4">
+            <div class="jumbotron">
+                <h2>Same Course <small><i>only more fun...</i></small></h2>
+                <p>This NYS DMV approved Point & Insurance Reduction Program is a six hour class designed to educate as well as to occupy and interest every participant. </p>
+                <p>
+                    Our tell-it-like-it-is presentation employs a provocative improvisational setting and highly skilled instructors who can deliver the message engagingly and humorously.
+                </p>
 
-                {{ link_to_route(
-                    'enroll_path', // Path Name
-                    'Enroll Now', // Display Text
-                    ['date' => $date->toDateString()], // Parameters
-                    ['class' => 'btn btn-lg btn-primary']
-                )}}
             </div>
         </div>
+        <div class="col-md-4 col-md-pull-8">
+            <div class="list-group text-center">
+                <div class="list-group-item">
+                    <h2>{{ $localClass->date->toFormattedDateString() }}
+                        <small pull-right>(9am - 3pm)</small>
+                    </h2>
+                    <p>{{ $localClass->date->diffForHumans() }}</p>
+                </div>
+                <div class="list-group-item">
+                    <h2>
+                        {{ $localClass->location->name }}
+                        <small>
+                            <address>{{ $localClass->location->address }}</address>
+                        </small>
+                    </h2>
 
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Class Date</h2>
-                    <p>{{ $date->toFormattedDateString() }}</p>
-                    <p>{{ $date->diffForHumans() }}</p>
                 </div>
-                <div class="col-md-4">
-                    <h2>Location</h2>
-                    <p>{{ $localClass->location->address }}</p>
+                <div class="list-group-item">
+                    <h2>
+                        ${{ $localClass->price }}
+                        <small>per person</small>
+                    </h2>
                 </div>
-                <div class="col-md-4">
-                    <h2>Cost</h2>
-                    <p>Registration costs ${{ $localClass->price }}</p>
+                <div class="list-group-item">
+                    {{ link_to_route(
+                        'enroll_path', // Path Name
+                        'Enroll Now', // Display Text
+                        ['date' => $localClass->date->toDateString()], // Parameters
+                        ['class' => 'btn btn-lg btn-primary btn-block']
+                    )}}
                 </div>
-            </div>
-        </div> <!-- /container -->
+            </div> <!-- /container -->
+        </div>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+
     </div>
 
     <!-- Registration Modal -->

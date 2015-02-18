@@ -11,11 +11,7 @@
         <link rel="stylesheet" href="/css/main.css">
         {{ HTML::style('/css/datepicker.css') }}
         {{ HTML::script('/javascript/bootstrap-datepicker.js') }}
-        <style>
-            body {
-                margin-top: 70px;
-            }
-        </style>
+        @yield('css')
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -32,14 +28,6 @@
         
         <script src="//code.jquery.com/jquery.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        {{ HTML::script('/javascript/bootstrap-datepicker.js') }}
-        <script>$('#flash-overlay-modal').modal();</script>
-        <script>
-            $('.input-append.date').datepicker({
-                format: "MM dd, yyyy",
-                autoclose: true,
-                todayHighlight: true
-            });
-        </script>
+        @yield('scripts')
     </body>
 </html>

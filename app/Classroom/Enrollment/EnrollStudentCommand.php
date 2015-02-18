@@ -25,14 +25,11 @@ class EnrollStudentCommand {
 
     public $total;
 
-    public $promo_code;
-
-    public function __construct($user_id, $localClass_id, $num_students, $promo_code, $total)
+    public function __construct($user_id, $localClass_id, $num_students, $total)
     {
         $this->user_id = $user_id;
         $this->num_students = $num_students;
         $this->localClass_id = $localClass_id;
-        $this->promo_code = $promo_code;
         $this->total = $total;
     }
 
