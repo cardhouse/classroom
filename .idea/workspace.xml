@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9145490c-ba1b-41a1-935e-24e25d855ad1" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/BaseController.php" afterPath="$PROJECT_DIR$/app/controllers/BaseController.php" />
+=======
+<<<<<<< Updated upstream
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommand.php" afterPath="$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommandHandler.php" afterPath="$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommandHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Locations/AddLocationCommandHandler.php" afterPath="$PROJECT_DIR$/app/Classroom/Locations/AddLocationCommandHandler.php" />
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php" afterPath="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php" afterPath="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Enrollment/Enrollment.php" afterPath="$PROJECT_DIR$/app/Classroom/Enrollment/Enrollment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/functional/EnrollmentCept.php" afterPath="$PROJECT_DIR$/tests/functional/EnrollmentCept.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/EnrollmentController.php" afterPath="$PROJECT_DIR$/app/controllers/EnrollmentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClass.php" afterPath="$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClass.php" />
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/LocalClassesController.php" afterPath="$PROJECT_DIR$/app/controllers/LocalClassesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Promotions/Promo.php" afterPath="$PROJECT_DIR$/app/Classroom/Promotions/Promo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/localClasses/create.blade.php" afterPath="$PROJECT_DIR$/app/views/localClasses/create.blade.php" />
@@ -18,6 +27,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/accounts/show.blade.php" afterPath="$PROJECT_DIR$/app/views/accounts/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/localClasses/show.blade.php" afterPath="$PROJECT_DIR$/app/views/localClasses/show.blade.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClassesRepository.php" afterPath="$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClassesRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Locations/Location.php" afterPath="$PROJECT_DIR$/app/Classroom/Locations/Location.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Locations/LocationsRepository.php" afterPath="$PROJECT_DIR$/app/Classroom/Locations/LocationsRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Registration/RegisterUserCommand.php" afterPath="$PROJECT_DIR$/app/Classroom/Registration/RegisterUserCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Registration/RegisterUserCommandHandler.php" afterPath="$PROJECT_DIR$/app/Classroom/Registration/RegisterUserCommandHandler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Users/User.php" afterPath="$PROJECT_DIR$/app/Classroom/Users/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Classroom/Users/UserRepository.php" afterPath="$PROJECT_DIR$/app/Classroom/Users/UserRepository.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/class_list.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/class_list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="classroom.iws" />
@@ -49,11 +73,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< Updated upstream
       <file leaf-file-name="EnrollStudentCommandHandler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.51125" vertical-offset="212" max-vertical-offset="1012">
               <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+=======
+<<<<<<< Updated upstream
+      <file leaf-file-name="EnrollStudentCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.69" vertical-offset="0" max-vertical-offset="874">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+=======
+      <file leaf-file-name="class_list.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/class_list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1725" vertical-offset="0" max-vertical-offset="800">
+              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -107,8 +147,15 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/mail.php" />
         <option value="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollmentRepository.php" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/home.blade.php" />
+=======
+<<<<<<< Updated upstream
+        <option value="$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommandHandler.php" />
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClass.php" />
         <option value="$PROJECT_DIR$/app/controllers/LocalClassesController.php" />
         <option value="$PROJECT_DIR$/app/views/localClasses/show.blade.php" />
@@ -117,7 +164,17 @@
         <option value="$PROJECT_DIR$/app/Classroom/Promotions/Promo.php" />
         <option value="$PROJECT_DIR$/app/controllers/EnrollmentController.php" />
         <option value="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php" />
+=======
+<<<<<<< Updated upstream
+=======
+        <option value="$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/partials/class_list.blade.php" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -261,7 +318,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,11 +332,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< Updated upstream
               <option name="myItemId" value="functional" />
+=======
+<<<<<<< Updated upstream
+              <option name="myItemId" value="_output" />
+=======
+              <option name="myItemId" value="views" />
+>>>>>>> Stashed changes
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,7 +389,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+<<<<<<< Updated upstream
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+>>>>>>> Stashed changes
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+<<<<<<< Updated upstream
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+=======
+              <option name="myItemId" value="localClasses" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< Updated upstream
               <option name="myItemId" value="tests" />
+=======
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -315,7 +464,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< Updated upstream
               <option name="myItemId" value="_support" />
+=======
+              <option name="myItemId" value="Classroom" />
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,6 +491,69 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< Updated upstream
+=======
+            <PATH_ELEMENT>
+<<<<<<< Updated upstream
+              <option name="myItemId" value="Classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LocalClasses" />
+=======
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accounts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+>>>>>>> Stashed changes
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> Stashed changes
           </PATH>
         </subPane>
       </pane>
@@ -355,6 +577,7 @@
       <recent name="$PROJECT_DIR$/public/javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app/Classroom/Enrollment" />
       <recent name="$PROJECT_DIR$/app/views/registration/partials" />
     </key>
@@ -401,11 +624,23 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< Updated upstream
+=======
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+<<<<<<< Updated upstream
+=======
+      <method />
+    </configuration>
+>>>>>>> Stashed changes
     <configuration default="false" name="Classroom" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Laravel" start_url="/classroom/public/promo/add">
       <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <method />
     </configuration>
     <list size="3">
@@ -446,6 +681,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -455,6 +691,32 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< Updated upstream
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31796876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -483,14 +745,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/config/view.php">
+=======
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/public/css/datepicker.css">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="851">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/start/local.php">
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/start/local.php">
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -574,14 +848,26 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/views/localClasses/index.blade.php">
+=======
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/views/registration/create.blade.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1725" vertical-offset="0" max-vertical-offset="800">
           <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/Classroom/Forms/EnrollmentForm.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/localClasses/show.blade.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Classroom/Forms/EnrollmentForm.php">
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25875" vertical-offset="0" max-vertical-offset="800">
           <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
@@ -738,7 +1024,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
+=======
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/Classroom/LocalClasses/AddClassCommandHandler.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28125" vertical-offset="74" max-vertical-offset="874">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
@@ -773,13 +1064,26 @@
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/app/controllers/AccountsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.12125" vertical-offset="97" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LocalClassesController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.425" vertical-offset="1500" max-vertical-offset="2300">
           <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.7475" vertical-offset="0" max-vertical-offset="920">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424229401000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1424229401000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -796,13 +1100,24 @@
             <marker date="1424229401000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1424229401000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.425" vertical-offset="1500" max-vertical-offset="2300">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/localClasses/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.92" vertical-offset="207" max-vertical-offset="1633">
           <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.54625" vertical-offset="0" max-vertical-offset="800">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424229478000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1424229478000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -844,24 +1159,46 @@
             <marker date="1424229939000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1424229939000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.92" vertical-offset="207" max-vertical-offset="1633">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laracasts/commander/src/Laracasts/Commander/CommandBus.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.2875" vertical-offset="0" max-vertical-offset="800">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.14375" vertical-offset="0" max-vertical-offset="800">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1406992433000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1406992433000" expanded="true" signature="-1:-1" placeholder=" Execute a command ..." />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.2875" vertical-offset="0" max-vertical-offset="800">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClassesRepository.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="1.06375" vertical-offset="0" max-vertical-offset="1656">
           <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.69" vertical-offset="0" max-vertical-offset="1081">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder=" Save the local class to a location ..." />
@@ -875,13 +1212,24 @@
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder=" Find an instance of a local class given an ID ..." />
             <marker date="1422740713000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="1.06375" vertical-offset="0" max-vertical-offset="1656">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/LocalClasses/LocalClass.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.89125" vertical-offset="966" max-vertical-offset="1886">
           <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.77625" vertical-offset="0" max-vertical-offset="943">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424229303000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1424229303000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -897,13 +1245,24 @@
             <marker date="1424229303000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1424229303000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.89125" vertical-offset="966" max-vertical-offset="1886">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/Enrollment.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.74125" vertical-offset="649" max-vertical-offset="1449">
           <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.805" vertical-offset="0" max-vertical-offset="966">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424231339000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1424231339000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -916,13 +1275,24 @@
             <marker date="1424231339000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1424231339000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.74125" vertical-offset="649" max-vertical-offset="1449">
+          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollmentRepository.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.68375" vertical-offset="902" max-vertical-offset="1702">
           <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.92" vertical-offset="0" max-vertical-offset="1012">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1422915276000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1422915276000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -938,26 +1308,48 @@
             <marker date="1422915276000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1422915276000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.68375" vertical-offset="902" max-vertical-offset="1702">
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/Promotions/Promo.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.6325" vertical-offset="0" max-vertical-offset="800">
           <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424231763000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1424231763000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1424231763000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1424231763000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.6325" vertical-offset="0" max-vertical-offset="800">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/EnrollmentController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.6325" vertical-offset="1081" max-vertical-offset="1909">
           <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.9775" vertical-offset="0" max-vertical-offset="1357">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+>>>>>>> Stashed changes
           <folding>
             <marker date="1424231933000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -973,11 +1365,17 @@
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.6325" vertical-offset="1081" max-vertical-offset="1909">
+          <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
+          <folding />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state vertical-scroll-proportion="0.54" vertical-offset="143" max-vertical-offset="943">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
@@ -986,14 +1384,128 @@
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder=" ID of the class being enrolled in ..." />
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder=" Number of students being enrolled ..." />
             <marker date="1424231933000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
+=======
+<<<<<<< Updated upstream
+        <state vertical-scroll-proportion="0.77" vertical-offset="258" max-vertical-offset="1219">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding>
+            <marker date="1421971227000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder=" @var UserRepository ..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder=" @var LocalClassesRepository ..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder=" Save the enrollment to a user ..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder=" Save the enrollment to a class ..." />
+            <marker date="1421971227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+=======
+        <state vertical-scroll-proportion="0.54" vertical-offset="143" max-vertical-offset="943">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4825" vertical-offset="212" max-vertical-offset="1012">
+          <caret line="30" column="0" selection-start-line="29" selection-start-column="5" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1424233619000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1424233619000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424233619000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424233619000" expanded="true" signature="-1:-1" placeholder=" Create an instance of an enrollment ..." />
+            <marker date="1424233619000" expanded="true" signature="-1:-1" placeholder="{...}" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommandHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51125" vertical-offset="212" max-vertical-offset="1012">
           <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+=======
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/Classroom/Enrollment/EnrollStudentCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69" vertical-offset="0" max-vertical-offset="874">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54" vertical-offset="74" max-vertical-offset="874">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <marker date="1425231383000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425231383000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425231383000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425231383000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425231383000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02875" vertical-offset="138" max-vertical-offset="1380">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1425232404000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/localClasses/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1725" vertical-offset="0" max-vertical-offset="920">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <marker date="1423879435000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423879435000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423879435000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1423879435000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423879435000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/accounts/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45375" vertical-offset="143" max-vertical-offset="943">
+          <caret line="22" column="80" selection-start-line="20" selection-start-column="62" selection-end-line="22" selection-end-column="80" />
+          <folding>
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424236498000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/class_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1725" vertical-offset="0" max-vertical-offset="800">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>

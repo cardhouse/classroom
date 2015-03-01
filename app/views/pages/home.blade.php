@@ -1,32 +1,53 @@
 @extends('layouts.main')
 
 @section('content')
-
-    <div class="container">
+    {{--<div class="container-fluid">--}}
         <div class="jumbotron">
-            <h1>DriveNY.org</h1>
-            <p>Home of the only humerous Point and Insurance Reduction Course</p>
-            @if( ! $currentUser)
-                <p>{{ link_to_route('register_path', 'Register Now', null, ["class" => "btn btn-lg btn-primary"]) }}</p>
-            @endif
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Same class <small>just more fun...</small></h1>
+
+                    {{ HTML::image('images/newYorkSeal.png', 'DMV approved', array('class' => 'pull-right')) }}
+
+                    <p>
+                        Home of the only humerous Point and Insurance Reduction Course approved by the New York State
+                        Department of Motor Vehicles
+                    </p>
+                    <div class="clearfix"></div>
+                    <h2>By taking this class, you will receive</h2>
+                    <p>
+                        <span class="glyphicon glyphicon-share-alt"></span>
+                        10&#37; reduction of your collision and liability insurance for a full 3 years.
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-share-alt"></span>
+                        Up to 4 points reduced from your driving record (if you have any)
+                    </p>
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-6">--}}
+                            {{--@{{ HTML::image('images/improv-logo-wall-transparent.png', 'improv comedy group') }}--}}
+                        {{--</div>--}}
+                        {{--<div class="col-md-6">--}}
+
+                        {{--</div>--}}
+                    {{--</div>--}}
+                </div>
+
+                <div class="col-md-4">
+                    <h2 class="text-center">Upcoming classes</h2>
+                    @include('layouts.partials.class_list')
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-4 text-center">
-                <h2>Benefits</h2>
-                <h3>Insurance reduction</h3>
-                <p>Each student will receive 10&#37; off of their collision and liability insurance for a full three
-                    years.</p>
-                <h3>Point reduction</h3>
-                <p>Each student can have up to 4 points reduced from their driving record</p>
-
             </div>
+
             <div class="col-sm-4">
-                @include('layouts.partials.class_list')
             </div>
             <div class="col-sm-4 text-center">
                 <small>Point reduction is valid on any points incurred in the last 18 months</small>
             </div>
         </div>
-    </div>
-
+    {{--</div>--}}
 @stop
