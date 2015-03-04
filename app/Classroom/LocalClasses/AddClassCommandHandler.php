@@ -26,7 +26,8 @@ class AddClassCommandHandler implements CommandHandler {
      */
     public function handle($command)
     {
-        $localClass = LocalClass::add($command->date, $command->location_id);
+        $date = date('Y-m-d', strtotime($command->date));
+        $localClass = LocalClass::add($date, $command->location_id);
 
         $this->repository->save($localClass, $command->location_id);
 

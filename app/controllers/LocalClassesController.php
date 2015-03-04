@@ -67,10 +67,8 @@ class LocalClassesController extends \BaseController {
 	public function store()
 	{
 		$this->addClassForm->validate(Input::all());
-		extract(Input::all());
-		// Change string date field into a dateTime
-		$date = date('Y-m-d', strtotime($date));
-		$this->commandBus->execute(new AddClassCommand($date, $location_id));
+
+        $this->execute('Classroom\LocalClasses\AddClassCommand');
 
 		return Redirect::route('local_classes_path');
 	}
