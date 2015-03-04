@@ -3,11 +3,14 @@
 use Classroom\Forms\RegistrationForm;
 use Classroom\Registration\RegisterUserCommand;
 use Laracasts\Commander\CommandBus;
+use Laracasts\Commander\CommanderTrait;
 
 class RegistrationController extends \BaseController {
 
+    use CommanderTrait;
+
     private $registrationForm;
-    
+
     private $commandBus;
     
     function __construct(Laracasts\Commander\CommandBus $commandBus, RegistrationForm $registrationForm)
@@ -31,10 +34,8 @@ class RegistrationController extends \BaseController {
     public function store()
     {
         $this->registrationForm->validate(Input::all());
-        
-        extract(Input::only('name', 'email', 'password'));
-        $command = new RegisterUserCommand($name, $email, $password);
-        $user = $this->commandBus->execute($command);
+
+        $user = $this->execute('Classroom\Registration\RegisterUserCommand');
         
         Auth::login($user);
         

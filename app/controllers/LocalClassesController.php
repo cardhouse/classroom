@@ -6,10 +6,13 @@ use Classroom\LocalClasses\AddClassCommand;
 use Classroom\LocalClasses\LocalClassesRepository;
 use Classroom\Locations\LocationsRepository;
 use Laracasts\Commander\CommandBus;
+use Laracasts\Commander\CommanderTrait;
 
 class LocalClassesController extends \BaseController {
 
-	private $commandBus;
+	use CommanderTrait;
+
+    private $commandBus;
 
 	private $localClassesRepository;
 	/**

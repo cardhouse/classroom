@@ -2,9 +2,11 @@
 
 use Classroom\Promotions\Promo;
 use Classroom\LocalClasses\LocalClassesRepository;
+use Laracasts\Commander\CommanderTrait;
 
 class BaseController extends Controller {
 
+    use CommanderTrait;
 	/**
 	 * Setup the layout used by the controller.
 	 *

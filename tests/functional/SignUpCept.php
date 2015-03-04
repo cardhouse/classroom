@@ -4,7 +4,7 @@ $I->am('guest');
 $I->wantTo('register for an account');
 
 $I->amOnPage('/');
-$I->click("Register Now");
+$I->click("Register");
 $I->seeCurrentUrlEquals('/register');
 
 $I->fillField("Name:","bar");

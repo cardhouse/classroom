@@ -10,27 +10,21 @@ class EnrollStudentCommand {
     public $user_id;
 
     /**
-     * ID of the class being enrolled in
-     *
-     * @var string
-     */
-    public $localClass_id;
-
-    /**
      * Number of students being enrolled
      *
      * @var string
      */
     public $num_students;
 
-    public $total;
+    public $localClass_date;
+    public $promo_code;
 
-    public function __construct($user_id, $localClass_id, $num_students, $total)
+    public function __construct($user_id, $localClass_date, $num_students, $promo_code)
     {
         $this->user_id = $user_id;
         $this->num_students = $num_students;
-        $this->localClass_id = $localClass_id;
-        $this->total = $total;
+        $this->localClass_date = $localClass_date;
+        $this->promo_code = $promo_code;
     }
 
 }

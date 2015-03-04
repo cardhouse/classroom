@@ -19,10 +19,6 @@ class EnrollmentController extends \BaseController {
 	 */
 	private $enrollmentRepository;
 	/**
-	 * @var CommandBus
-	 */
-	private $commandBus;
-	/**
 	 * @var LocalClassesRepository
 	 */
 	private $localClassesRepository;
@@ -31,12 +27,11 @@ class EnrollmentController extends \BaseController {
 	 */
 	private $promoRepo;
 
-	function __construct(PromotionsRepository $promoRepo, LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm, EnrollmentRepository $enrollmentRepository, CommandBus $commandBus)
+	function __construct(PromotionsRepository $promoRepo, LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm, EnrollmentRepository $enrollmentRepository)
 	{
 		$this->beforeFilter('auth');
 		$this->enrollmentForm = $enrollmentForm;
 		$this->enrollmentRepository = $enrollmentRepository;
-		$this->commandBus = $commandBus;
 		$this->localClassesRepository = $localClassesRepository;
 		$this->promoRepo = $promoRepo;
 	}
@@ -62,23 +57,16 @@ class EnrollmentController extends \BaseController {
 	 */
 	public function store($date)
 	{
-		$localClass = $this->localClassesRepository->findByDate($date);
-
-		$input = array_add(Input::get(), 'user_id', Auth::id());
-		$input = array_add($input, 'localClass_id', $localClass->id);
-
+        // Add necessary input and validate
+		$input = array_add(Input::all(), 'user_id', Auth::id());
+		$input = array_add($input, 'localClass_date', $date);
 		$this->enrollmentForm->validate($input);
-		extract($input);
 
-		$promo = $this->promoRepo->findById($promo_code);
+        // Fire off command to enroll the student
+		$this->execute('Classroom\Enrollment\EnrollStudentCommand', $input);
 
-		$total = ($localClass->price - $promo->discount) * $num_students;
-		$enrollment = $this->commandBus->execute(new EnrollStudentCommand($user_id, $localClass_id, $num_students,
-            $total));
-        $promo->enrollments()->save($enrollment);
-
+        // Redirect to the account page
 		Flash::success('You have enrolled');
-
 		return Redirect::route('account_path');
 	}
 }
