@@ -1,18 +1,10 @@
 <?php
 
-use Carbon\Carbon;
 use Classroom\Forms\AddClassForm;
-use Classroom\LocalClasses\AddClassCommand;
 use Classroom\LocalClasses\LocalClassesRepository;
 use Classroom\Locations\LocationsRepository;
-use Laracasts\Commander\CommandBus;
-use Laracasts\Commander\CommanderTrait;
 
 class LocalClassesController extends \BaseController {
-
-	use CommanderTrait;
-
-    private $commandBus;
 
 	private $localClassesRepository;
 	/**
@@ -24,10 +16,9 @@ class LocalClassesController extends \BaseController {
 	 */
 	private $locationsRepository;
 
-	function __construct(LocationsRepository $locationsRepository, AddClassForm $addClassForm,CommandBus $commandBus,LocalClassesRepository $localClassesRepository)
+	function __construct(LocationsRepository $locationsRepository, AddClassForm $addClassForm,LocalClassesRepository $localClassesRepository)
 	{
 		$this->beforeFilter('auth', ['except' => ['index', 'show']]);
-		$this->commandBus = $commandBus;
 		$this->addClassForm = $addClassForm;
 		$this->localClassesRepository = $localClassesRepository;
 		$this->locationsRepository = $locationsRepository;
