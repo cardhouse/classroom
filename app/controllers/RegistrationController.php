@@ -1,25 +1,16 @@
 <?php
 
 use Classroom\Forms\RegistrationForm;
-use Classroom\Registration\RegisterUserCommand;
-use Laracasts\Commander\CommandBus;
-use Laracasts\Commander\CommanderTrait;
 
 class RegistrationController extends \BaseController {
 
-    use CommanderTrait;
-
     private $registrationForm;
-
-    private $commandBus;
     
-    function __construct(Laracasts\Commander\CommandBus $commandBus, RegistrationForm $registrationForm)
+    function __construct(RegistrationForm $registrationForm)
     {
         $this->registrationForm = $registrationForm;
         
         $this->beforeFilter('guest');
-        
-        $this->commandBus = $commandBus;
     }
 	/**
 	 * Show the form to register for a class
