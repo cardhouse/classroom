@@ -7,14 +7,11 @@ use Laracasts\Commander\CommandBus;
 
 class LocationsController extends \BaseController {
 
-	private $commandBus;
-
 	private $locationsRepository;
 
-	function __construct(CommandBus $commandBus, LocationsRepository $locationsRepository)
+	function __construct(LocationsRepository $locationsRepository)
 	{
 		$this->beforeFilter('auth', ['except' => 'index']);
-		$this->commandBus = $commandBus;
 		$this->locationsRepository = $locationsRepository;
 	}
 
@@ -51,9 +48,8 @@ class LocationsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$this->commandBus->execute(new AddLocationCommand(Input::all()));
+		$this->execute('Classroom\Locations\AddLocationCommand');
+
 		return Redirect::back();
 	}
-
-
 }

@@ -1,21 +1,16 @@
 <?php
 
 use Classroom\Forms\AddPromoForm;
-use Classroom\Promotions\AddPromoCodeCommand;
-use Classroom\Promotions\Promo;
-use Laracasts\Commander\CommandBus;
 
 class PromotionsController extends \BaseController {
 
-	private $commandBus;
 	/**
 	 * @var AddPromoForm
 	 */
 	private $promoForm;
 
-	function __construct(CommandBus $commandBus, AddPromoForm $promoForm)
+	function __construct(AddPromoForm $promoForm)
 	{
-		$this->commandBus = $commandBus;
 		$this->promoForm = $promoForm;
 	}
 
@@ -50,50 +45,11 @@ class PromotionsController extends \BaseController {
 	 */
 	public function store()
 	{
+		$this->promoForm->validate(Input::all());
 
-		$input = Input::all();
-		$this->promoForm->validate($input);
-		extract($input);
-		$this->commandBus->execute(new AddPromoCodeCommand($name, $promo_code, $discount));
+		$this->execute('Classroom\Promotions\AddPromoCodeCommand');
 
 		return Redirect::route('promo_path');
-
-	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /promotions/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /promotions/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /promotions/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
 	}
 
 }

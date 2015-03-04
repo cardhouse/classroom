@@ -8,9 +8,9 @@ class AddLocationCommand {
 
     public $address;
 
-    function __construct($location)
+    function __construct($name, $address)
     {
-        $this->name = $location['name'];
-        $this->address = $location['address'];
+        $this->name = $name;
+        $this->address = $address;
     }
 }
