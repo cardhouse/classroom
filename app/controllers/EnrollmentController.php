@@ -1,11 +1,7 @@
 <?php
 
-use Classroom\Enrollment\EnrollmentRepository;
-use Classroom\Enrollment\EnrollStudentCommand;
 use Classroom\Forms\EnrollmentForm;
 use Classroom\LocalClasses\LocalClassesRepository;
-use Classroom\Promotions\PromotionsRepository;
-use Laracasts\Commander\CommandBus;
 use Laracasts\Flash\Flash;
 
 class EnrollmentController extends \BaseController {
@@ -15,26 +11,16 @@ class EnrollmentController extends \BaseController {
 	 */
 	private $enrollmentForm;
 	/**
-	 * @var EnrollmentRepository
-	 */
-	private $enrollmentRepository;
-	/**
 	 * @var LocalClassesRepository
 	 */
 	private $localClassesRepository;
-	/**
-	 * @var PromotionsRepository
-	 */
-	private $promoRepo;
 
-	function __construct(PromotionsRepository $promoRepo, LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm, EnrollmentRepository $enrollmentRepository)
+	function __construct(LocalClassesRepository $localClassesRepository, EnrollmentForm $enrollmentForm)
 	{
 		$this->beforeFilter('auth');
-		$this->enrollmentForm = $enrollmentForm;
-		$this->enrollmentRepository = $enrollmentRepository;
 		$this->localClassesRepository = $localClassesRepository;
-		$this->promoRepo = $promoRepo;
-	}
+        $this->enrollmentForm = $enrollmentForm;
+    }
 
 
 	/**
